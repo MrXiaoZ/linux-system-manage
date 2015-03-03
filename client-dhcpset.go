@@ -27,7 +27,7 @@ func main() {
 	client := hprose.NewClient("http://172.16.1.231:8080/")
 
 	var dhcpset *DhcpSet
-    client.UseService(&dhcpset)
+        client.UseService(&dhcpset)
 	fmt.Println(dhcpset.DhcpSet("1.1.1.1","24","1.1.1.10","1.1.1.100","1.1.1.254"))
 	fmt.Println(dhcpset.DhcpSet(*subnet,*mask,*start,*end,*routers))
 }
