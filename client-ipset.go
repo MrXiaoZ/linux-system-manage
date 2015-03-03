@@ -25,7 +25,7 @@ func main() {
 	client := hprose.NewClient("http://172.16.1.231:8080/")
 
 	var ipset *IpSet
-    client.UseService(&ipset)
+        client.UseService(&ipset)
 	fmt.Println(ipset.IpSet("1.1.1.1","24","1.1.1.254"))
 	fmt.Println(ipset.IpSet(*ip,*mask,*gateway))
 }
