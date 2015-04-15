@@ -1,7 +1,7 @@
 package main
 
 import (
-	"cimer-vms/models"
+	"models"
 	"fmt"
 	"flag"
 	"github.com/hprose/hprose-go/hprose"
